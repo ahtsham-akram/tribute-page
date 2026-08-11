@@ -1,0 +1,191 @@
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#101820;
+  color:#f4f4f4;
+  line-height:1.7;
+}
+
+#main{
+  width:100%;
+  max-width:1100px;
+  margin:auto 0;
+  background:#182630;
+  min-height:100vh;
+}
+
+.hero{
+  text-align:center;
+  padding:80px 30px 60px;
+}
+
+.eyebrow{
+  letter-spacing:4px;
+  font-size:0.8rem;
+  color:#e7b75b;
+  font-weight:bold;
+}
+
+#title{
+  font-size:clamp(2.5rem, 7vw, 5rem);
+  margin:10px 0;
+  letter-spacing:-2px;
+}
+
+.subtitle{
+  max-width:650px;
+  margin:0 auto;
+  color:#b9c4ca;
+  font-size:1.1rem;
+}
+
+#img-div{
+  margin:0;
+  background:#0b1217;
+  padding:35px;
+  text-align:center
+}
+
+#image{
+  display:block;
+  max-width:100%;
+  height:auto;
+  max-height:600px;
+  margin:0 auto;
+  border-radius:12px;
+}
+
+#img-caption{
+  max-width:750px;
+  margin:20px auto 0;
+  color:#aeb9bf;
+  font-size:0.95rem;
+}
+
+#tribute-info{
+  padding:70px 30px;
+  max-width:900px;
+  margin:auto;
+}
+
+#tribute-info h2{
+  text-align:center;
+  margin-bottom:2rem;
+  font-size:50px;
+}
+
+
+.timeline {
+  position: relative;
+  border-left: 2px solid #e7b75b;
+  padding-left: 35px;
+}
+
+.timeline article {
+  position: relative;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 45px;
+}
+
+.timeline article::before {
+  content: "";
+  position: absolute;
+  left: -44px;
+  top: 8px;
+  width: 15px;
+  height: 15px;
+  background: #e7b75b;
+  border-radius: 50%;
+}
+
+.year {
+  color: #e7b75b;
+  font-weight: bold;
+  min-width: 55px;
+}
+
+.timeline h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.timeline p {
+  margin: 0;
+  color: #b9c4ca;
+}
+
+/* Quote */
+
+blockquote {
+  margin: 0;
+  padding: 70px 30px;
+  text-align: center;
+  background: #0b1217;
+}
+
+blockquote p {
+  max-width: 700px;
+  margin: 0 auto 15px;
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+blockquote cite {
+  color: #e7b75b;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 45px 25px;
+  color: #b9c4ca;
+}
+
+#tribute-link {
+  color: #e7b75b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 55px 20px 40px;
+  }
+
+  #img-div {
+    padding: 20px;
+  }
+
+  #tribute-info {
+    padding: 50px 20px;
+  }
+
+  .timeline article {
+    display: block;
+  }
+
+  .year {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+}
+
+
