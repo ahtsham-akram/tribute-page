@@ -1,87 +1,106 @@
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#101820;
-  color:#f4f4f4;
-  line-height:1.7;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101820;
+  color: #f4f4f4;
+  line-height: 1.7;
+  text-align: left;
 }
 
-#main{
-  width:100%;
-  max-width:1100px;
-  margin:auto 0;
-  background:#182630;
-  min-height:100vh;
+#main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #182630;
+  min-height: 100vh;
 }
 
-.hero{
-  text-align:center;
-  padding:80px 30px 60px;
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding: 80px 30px 60px;
 }
 
-.eyebrow{
-  letter-spacing:4px;
-  font-size:0.8rem;
-  color:#e7b75b;
-  font-weight:bold;
+.eyebrow {
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  color: #e7b75b;
+  font-weight: bold;
+  text-align: center;
 }
 
-#title{
-  font-size:clamp(2.5rem, 7vw, 5rem);
-  margin:10px 0;
-  letter-spacing:-2px;
+#title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  margin: 10px 0;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  text-align: center;
 }
 
-.subtitle{
-  max-width:650px;
-  margin:0 auto;
-  color:#b9c4ca;
-  font-size:1.1rem;
+.subtitle {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #b9c4ca;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
-#img-div{
-  margin:0;
-  background:#0b1217;
-  padding:35px;
-  text-align:center
+/* Image */
+
+#img-div {
+  margin: 0;
+  background: #0b1217;
+  padding: 35px;
+  text-align: center;
 }
 
-#image{
-  display:block;
-  max-width:100%;
-  height:auto;
-  max-height:600px;
-  margin:0 auto;
-  border-radius:12px;
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
 }
 
-#img-caption{
-  max-width:750px;
-  margin:20px auto 0;
-  color:#aeb9bf;
-  font-size:0.95rem;
+#img-caption {
+  max-width: 750px;
+  margin: 20px auto 0;
+  color: #aeb9bf;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: center;
 }
 
-#tribute-info{
-  padding:70px 30px;
-  max-width:900px;
-  margin:auto;
+/* Tribute Information */
+
+#tribute-info {
+  padding: 70px 30px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
 }
 
-#tribute-info h2{
-  text-align:center;
-  margin-bottom:2rem;
-  font-size:50px;
+#tribute-info h2 {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  line-height: 1.2;
+  color: #f4f4f4;
 }
 
+/* Timeline */
 
 .timeline {
   position: relative;
@@ -111,16 +130,21 @@ body{
   color: #e7b75b;
   font-weight: bold;
   min-width: 55px;
+  font-size: 1rem;
 }
 
 .timeline h3 {
   margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 .timeline p {
   margin: 0;
   color: #b9c4ca;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 /* Quote */
@@ -135,12 +159,16 @@ blockquote {
 blockquote p {
   max-width: 700px;
   margin: 0 auto 15px;
-  font-size: 1.7rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
   font-style: italic;
+  line-height: 1.6;
+  text-align: center;
 }
 
 blockquote cite {
   color: #e7b75b;
+  font-size: 0.95rem;
 }
 
 /* Footer */
@@ -149,24 +177,36 @@ footer {
   text-align: center;
   padding: 45px 25px;
   color: #b9c4ca;
+  font-size: 0.95rem;
 }
 
-#tribute-link {
+footer p {
+  margin: 0;
+}
+
+footer a {
   color: #e7b75b;
   font-weight: bold;
   text-decoration: none;
 }
 
-#tribute-link:hover {
+footer a:hover {
   text-decoration: underline;
 }
 
 /* Mobile */
 
 @media (max-width: 600px) {
-
   .hero {
     padding: 55px 20px 40px;
+  }
+
+  #title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 
   #img-div {
@@ -175,6 +215,10 @@ footer {
 
   #tribute-info {
     padding: 50px 20px;
+  }
+
+  #tribute-info h2 {
+    font-size: 2rem;
   }
 
   .timeline article {
@@ -186,6 +230,12 @@ footer {
     margin-bottom: 5px;
   }
 
-}
+  .timeline p {
+    font-size: 0.95rem;
+  }
 
+  blockquote {
+    padding: 50px 20px;
+  }
+}
 
